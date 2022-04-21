@@ -4,8 +4,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :authentication_keys => [:nickname]
          
-  validates :nickname, presence: true
-
+  with_options presence: true do
+    validates :nickname
+    validates :password, format: { with: /(?=.[a-zA-Z])(?=.*\d)[a-zA-Z\d]/ }
+  end
+  
   def email_required?
     false
   end

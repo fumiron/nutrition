@@ -6,6 +6,11 @@
         <%# 「ログイン機能へのパス」は、devise導入後にrails routesを実行してdevise/sessions#createへのパスを確認し、記載してください。 %>
         <%= form_with model: @user, url: user_session_path, local: true do |f| %>
 
+        <div class='login-flash-message'>
+          <%= flash[:notice] %>
+          <%= flash[:alert] %>
+        </div>
+
         <div class="field">
           <%= f.label :nickname, "ユーザー名" %><br />
           <%= f.text_field :nickname, id:"user_nickname" %>
