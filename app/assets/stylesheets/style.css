@@ -130,17 +130,60 @@ a {
   font-size: 30px;
   margin-bottom: 28px;
 }
-.card__wrapper {
+.title-contents {
+  background: url('foodiesfeed.com_kiwi-pinball.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: calc(100vh - 161px);
-}
-.card {
-  width: calc((100% - 50px) / 3);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   margin-bottom: 40px;
 }
+
+.sub-title {
+  font-size: 2.5vh;
+}
+
+.service-title {
+  font-size: 8vh;
+}
+
+.search-bar-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form {
+  width: 65vw;
+  height: 5vh;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.search-form>.input-box {
+  width: 100%;
+  height: 5vh;
+  padding-left: 10px;
+}
+
+.search-button {
+  width: 5vh;
+  border: 0;
+  cursor: pointer;
+  background-color: #3ccace;
+  padding: 8px;
+}
+
+.search-icon {
+  width: 100%;
+}
+
 .card__img {
   margin-bottom: 16px;
 }
