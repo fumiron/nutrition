@@ -61,6 +61,7 @@ https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99
 
 | Column        | Type       | Options                        |
 |---------------|------------|--------------------------------|
+| name          | string     | null: false                    |
 | calorie       | integer    |                                |
 | protein       | integer    |                                |
 | fat           | integer    |                                |
