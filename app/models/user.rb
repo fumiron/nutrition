@@ -8,7 +8,7 @@ class User < ApplicationRecord
     validates :nickname
     validates :password, format: { with: /(?=.[a-zA-Z])(?=.*\d)[a-zA-Z\d]/ }
   end
-  
+
   def email_required?
     false
   end
@@ -21,4 +21,6 @@ class User < ApplicationRecord
     false
   end
 
+  has_many :foods
+  
 end
