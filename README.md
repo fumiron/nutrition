@@ -64,7 +64,7 @@ https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99
 | calorie       | integer    |                                |
 | protein       | integer    |                                |
 | fat           | integer    |                                |
-| protein       | integer    |                                |
+| saturated_fat | integer    |                                |
 | n_6_fat       | integer    |                                |
 | n_3_fat       | integer    |                                |
 | cholesterol   | integer    |                                |
