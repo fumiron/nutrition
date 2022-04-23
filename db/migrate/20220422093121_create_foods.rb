@@ -36,6 +36,7 @@ class CreateFoods < ActiveRecord::Migration[6.0]
       t.integer    :selenium
       t.integer    :chromium
       t.integer    :molybdenum
+      t.integer    :salt
       t.references :user, null: false, foreign_key: true
 
       t.timestamps

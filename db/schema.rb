@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2022_04_22_093121) do
     t.integer "selenium"
     t.integer "chromium"
     t.integer "molybdenum"
+    t.integer "salt"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

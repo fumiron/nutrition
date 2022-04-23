@@ -96,6 +96,7 @@ https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99
 | selenium      | integer    |                                |
 | chromium      | integer    |                                |
 | molybdenum    | integer    |                                |
+| salt          | integer    |                                |
 | user          | references | null: false, foreign_key: true | 
 
 ### Association
