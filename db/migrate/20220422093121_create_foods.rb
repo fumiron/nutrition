@@ -1,6 +1,7 @@
 class CreateFoods < ActiveRecord::Migration[6.0]
   def change
     create_table :foods do |t|
+      t.string     :name
       t.integer    :calorie
       t.integer    :protein
       t.integer    :fat
@@ -36,7 +37,7 @@ class CreateFoods < ActiveRecord::Migration[6.0]
       t.integer    :chromium
       t.integer    :molybdenum
       t.references :user, null: false, foreign_key: true
-      
+
       t.timestamps
     end
   end
