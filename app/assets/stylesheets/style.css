@@ -211,6 +211,20 @@ a {
 }
 
 /* 詳細ページ */
+
+.table-bordered {
+  border-collapse: collapse;
+  border: 0;
+}
+.left {
+  border: 1px solid #222;
+  padding: 10px;
+}
+.right {
+  border: 1px solid #222;
+  padding: 10px 10px 10px 270px;
+}
+
 .prototype__wrapper{
   min-height: calc(100vh - 161px);
 }
