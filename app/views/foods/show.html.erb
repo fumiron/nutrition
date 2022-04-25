@@ -1,11 +1,13 @@
 <div class="main">
   <div class="inner">
     <div class="user__wrapper">
-      <h2 class="page-heading">
-       <%= link_to @food.name + "の栄養素詳細"%>
+      <h2><span class="show-heading">
+       <%= @food.name + "の栄養素詳細"%></span>
+       <%= link_to "編集",edit_food_path(@food.id), class: :nav__btn %>
+        </h2>
        <table class="table table-bordered">
   <thead>
-    <tr><th class="left">食品名</th><td class="right"><%= link_to @food.name, food_path %></td></tr>
+    <tr><th class="left">食品名</th><td class="right"><%= @food.name %></td></tr>
     <tr><th class="left">カロリー (kcal)</th><td class="right"><%= @food.calorie %></td></tr>
     <tr><th class="left">タンパク質 (g)</th><td class="right"><%= @food.protein %></td></tr>
     <tr><th class="left">脂質(g)</th><td class="right"><%= @food.fat %></td></tr>
@@ -43,7 +45,6 @@
     <tr><th class="left">食塩相当量 (g)</th><td class="right"><%= @food.salt %></td></tr>
   </thead>
 </table>
-      </h2>
     </div>
   </div>
 </div>
