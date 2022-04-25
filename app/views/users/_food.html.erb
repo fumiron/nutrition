@@ -1,0 +1,42 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="fo">食品名</th>
+      <th scope="fo">カロリー</th>
+      <th scope="fo">タンパク質</th>
+      <th scope="fo">脂質</th>
+      <th scope="fo">炭水化物</th>
+      <th scope="fo">ビタミンA</th>
+      <th scope="fo">ビタミンB1</th>
+      <th scope="fo">ビタミンB2</th>
+      <th scope="fo">ビタミンC</th>
+      <th scope="fo">ビタミンD</th>
+      <th scope="fo">ナトリウム</th>
+      <th scope="fo">カルシウム</th>
+      <th scope="fo">マグネシウム</th>
+      <th scope="fo">鉄</th>
+      <th scope="fo">亜鉛</th>
+      <th scope="fo">食塩相当量</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="nut"><%= link_to food.name, foods_path %></th>
+      <td><%= food.calorie %></td>
+      <td><%= food.protein %></td>
+      <td><%= food.fat %></td>
+      <td><%= food.carbohydrate %></td>
+      <td><%= food.vitamin_a %></td>
+      <td><%= food.vitamin_b1 %></td>
+      <td><%= food.vitamin_b2 %></td>
+      <td><%= food.vitamin_c %></td>
+      <td><%= food.vitamin_d %></td>
+      <td><%= food.natrium %></td>
+      <td><%= food.calcium %></td>
+      <td><%= food.magnesium %></td>
+      <td><%= food.iron %></td>
+      <td><%= food.zinc %></td>
+      <td><%= food.salt %></td>
+    </tr>
+  </tbody>
+</table>

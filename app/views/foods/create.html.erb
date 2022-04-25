@@ -1,0 +1,9 @@
+<div class="main">
+  <div class="inner">
+    <div class="form__wrapper">
+      <h2 class="page-heading">登録が完了しました</h2>
+     <%= link_to "続けて投稿する", new_food_path, class: :nav__btn %><br>
+     <%= link_to  "マイページで登録内容を見る", "/users/#{current_user.id}", class: :nav__btn %>
+    </div>
+  </div>
+</div>

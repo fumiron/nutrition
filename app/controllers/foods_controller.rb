@@ -7,11 +7,9 @@ class FoodsController < ApplicationController
   end
 
   def create
-    @food = Food.new(food_params)
+    @food = Food.create(food_params)
     @nickname = current_user.nickname
-    if @food.save
-      render ("users/show")
-    else
+    unless @food.save
       render :new
     end
   end
