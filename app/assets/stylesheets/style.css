@@ -212,13 +212,19 @@ a {
 
 /* 詳細ページ */
 
+.show-heading {
+  font-size: 40px;
+  margin-right: 160px;
+}
+
 .table-bordered {
   border-collapse: collapse;
   border: 0;
+  margin-top: 10px;
 }
 .left {
   border: 1px solid #222;
-  padding: 10px;
+  padding: 10px 135px 10px 135px;
 }
 .right {
   border: 1px solid #222;
