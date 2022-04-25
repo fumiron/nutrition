@@ -1,0 +1,49 @@
+<div class="main">
+  <div class="inner">
+    <div class="user__wrapper">
+      <h2 class="page-heading">
+       <%= link_to @food.name + "の栄養素詳細"%>
+       <table class="table table-bordered">
+  <thead>
+    <tr><th class="left">食品名</th><td class="right"><%= link_to @food.name, food_path %></td></tr>
+    <tr><th class="left">カロリー (kcal)</th><td class="right"><%= @food.calorie %></td></tr>
+    <tr><th class="left">タンパク質 (g)</th><td class="right"><%= @food.protein %></td></tr>
+    <tr><th class="left">脂質(g)</th><td class="right"><%= @food.fat %></td></tr>
+    <tr><th class="left">飽和脂肪酸 (g)</th><td class="right"><%= @food.saturated_fat %></td></tr>
+    <tr><th class="left">n-6系脂肪酸 (g)</th><td class="right"><%= @food.n_6_fat %></td></tr>
+    <tr><th class="left">n-3系脂肪酸 (g)</th><td class="right"><%= @food.n_3_fat %></td></tr>
+    <tr><th class="left">コレステロール (mg)</th><td class="right"><%= @food.cholesterol %></td></tr>
+    <tr><th class="left">炭水化物 (g)</th><td class="right"><%= @food.carbohydrate %></td></tr>
+    <tr><th class="left">食物繊維 (g)</th><td class="right"><%= @food.dietary_fiber %></td></tr>
+    <tr><th class="left">ビタミンA (mg)</th><td class="right"><%= @food.vitamin_a %></td></tr>
+    <tr><th class="left">ビタミンD (mg)</th><td class="right"><%= @food.vitamin_d %></td></tr>
+    <tr><th class="left">ビタミンE (mg)</th><td class="right"><%= @food.vitamin_e %></td></tr>
+    <tr><th class="left">ビタミンK (mg)</th><td class="right"><%= @food.vitamin_k %></td></tr>
+    <tr><th class="left">ビタミンB1 (mg)</th><td class="right"><%= @food.vitamin_b1 %></td></tr>
+    <tr><th class="left">ビタミンB2 (mg)</th><td class="right"><%= @food.vitamin_b2 %></td></tr>
+    <tr><th class="left">ビタミンB6 (mg)</th><td class="right"><%= @food.vitamin_b6 %></td></tr>
+    <tr><th class="left">ビタミンB12 (mg)</th><td class="right"><%= @food.vitamin_b12 %></td></tr>
+    <tr><th class="left">ビタミンC (mg)</th><td class="right"><%= @food.vitamin_c %></td></tr>
+    <tr><th class="left">ナイアシン (mgNE)</th><td class="right"><%= @food.niacin %></td></tr>
+    <tr><th class="left">葉酸 (μg)</th><td class="right"><%= @food.folate %></td></tr>
+    <tr><th class="left">パントテン酸 (μg)</th><td class="right"><%= @food.pantothenic %></td></tr>
+    <tr><th class="left">ナトリウム (mg)</th><td class="right"><%= @food.sodium %></td></tr>
+    <tr><th class="left">カリウム (mg)</th><td class="right"><%= @food.potassium %></td></tr>
+    <tr><th class="left">カルシウム (mg)</th><td class="right"><%= @food.calcium %></td></tr>
+    <tr><th class="left">マグネシウム (mg)</th><td class="right"><%= @food.magnesium %></td></tr>
+    <tr><th class="left">リン (mg)</th><td class="right"><%= @food.phosphorus %></td></tr>
+    <tr><th class="left">鉄 (mg)</th><td class="right"><%= @food.iron %></td></tr>
+    <tr><th class="left">亜鉛 (mg)</th><td class="right"><%= @food.zinc %></td></tr>
+    <tr><th class="left">銅 (μg)</th><td class="right"><%= @food.copper %></td></tr>
+    <tr><th class="left">マンガン (mg)</th><td class="right"><%= @food.manganese %></td></tr>
+    <tr><th class="left">ヨウ素 (μg)</th><td class="right"><%= @food.iodine %></td></tr>
+    <tr><th class="left">セレン (μg)</th><td class="right"><%= @food.selenium %></td></tr>
+    <tr><th class="left">クロム (μg)</th><td class="right"><%= @food.chromium%></td></tr>
+    <tr><th class="left">モリブデン (μg)</th><td class="right"><%= @food.molybdenum %></td></tr>
+    <tr><th class="left">食塩相当量 (g)</th><td class="right"><%= @food.salt %></td></tr>
+  </thead>
+</table>
+      </h2>
+    </div>
+  </div>
+</div>

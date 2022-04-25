@@ -37,7 +37,7 @@ a {
 /* ヘッダー */
 
 .header {
-  background-color: #f1f8fe;
+  background:linear-gradient(to bottom right, #CCFF66, #FFFFCC);
   margin-bottom: 48px;
   padding: 20px 0;
 
@@ -128,8 +128,14 @@ a {
 }
 .page-heading {
   font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.page-explain {
+  font-size: 15px;
   margin-bottom: 28px;
 }
+
 .title-contents {
   background: url('foodiesfeed.com_kiwi-pinball.jpg');
   background-size: cover;
@@ -205,6 +211,20 @@ a {
 }
 
 /* 詳細ページ */
+
+.table-bordered {
+  border-collapse: collapse;
+  border: 0;
+}
+.left {
+  border: 1px solid #222;
+  padding: 10px;
+}
+.right {
+  border: 1px solid #222;
+  padding: 10px 10px 10px 270px;
+}
+
 .prototype__wrapper{
   min-height: calc(100vh - 161px);
 }
@@ -282,11 +302,7 @@ a {
 .user__wrapper{
   min-height: calc(100vh - 161px);
 }
-.table{
-  border-collapse: collapse;
-  margin-bottom: 32px;
-  width: 50%;
-}
+
 .table__col1{
   text-align: left;
   font-weight: bold;
@@ -304,7 +320,7 @@ a {
   padding: 16px 8px;
 }
 .user__card {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;

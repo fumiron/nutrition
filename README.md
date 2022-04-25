@@ -61,10 +61,11 @@ https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99
 
 | Column        | Type       | Options                        |
 |---------------|------------|--------------------------------|
+| name          | string     | null: false                    |
 | calorie       | integer    |                                |
 | protein       | integer    |                                |
 | fat           | integer    |                                |
-| protein       | integer    |                                |
+| saturated_fat | integer    |                                |
 | n_6_fat       | integer    |                                |
 | n_3_fat       | integer    |                                |
 | cholesterol   | integer    |                                |
@@ -82,7 +83,8 @@ https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99
 | niacin        | integer    |                                |
 | folate        | integer    |                                |
 | pantothenic   | integer    |                                |
-| natrium       | integer    |                                |
+| biotin        | integer    |                                |
+| sodium        | integer    |                                |
 | potassium     | integer    |                                |
 | calcium       | integer    |                                |
 | magnesium     | integer    |                                |
@@ -95,6 +97,7 @@ https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99
 | selenium      | integer    |                                |
 | chromium      | integer    |                                |
 | molybdenum    | integer    |                                |
+| salt          | integer    |                                |
 | user          | references | null: false, foreign_key: true | 
 
 ### Association
