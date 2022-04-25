@@ -1,7 +1,7 @@
 class Food < ApplicationRecord
 
   belongs_to :user
-
-  validates :name, presence: true
-  
+  with_options presence: true do
+    validates :name
+  end
 end

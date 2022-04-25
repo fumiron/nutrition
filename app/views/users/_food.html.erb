@@ -21,7 +21,7 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="nut"><%= link_to food.name, food_path %></th>
+      <th scope="nut"><%= link_to food.name, food_path(food.id) %></th>
       <td><%= food.calorie %></td>
       <td><%= food.protein %></td>
       <td><%= food.fat %></td>
