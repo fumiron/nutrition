@@ -83,7 +83,8 @@ https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99
 | niacin        | integer    |                                |
 | folate        | integer    |                                |
 | pantothenic   | integer    |                                |
-| natrium       | integer    |                                |
+| biotin        | integer    |                                |
+| sodium        | integer    |                                |
 | potassium     | integer    |                                |
 | calcium       | integer    |                                |
 | magnesium     | integer    |                                |

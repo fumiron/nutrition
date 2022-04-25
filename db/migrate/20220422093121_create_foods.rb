@@ -23,7 +23,8 @@ class CreateFoods < ActiveRecord::Migration[6.0]
       t.integer    :niacin
       t.integer    :folate
       t.integer    :pantothenic
-      t.integer    :natrium
+      t.integer    :biotin
+      t.integer    :sodium
       t.integer    :potassium
       t.integer    :calcium
       t.integer    :magnesium
