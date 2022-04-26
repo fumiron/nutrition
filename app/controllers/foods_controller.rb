@@ -9,7 +9,9 @@ class FoodsController < ApplicationController
   def create
     @food = Food.new(food_params)
     @nickname = current_user.nickname
-    unless @food.save
+    if @food.save
+      redirect_to "/users/#{current_user.id}"
+    else
       render :new
     end
   end
@@ -30,6 +32,14 @@ class FoodsController < ApplicationController
       render :update
     end
   end
+
+  def destroy
+    @food = Food.find(params[:id])
+    if @food.destroy
+      redirect_to "/users/#{current_user.id}"
+    end
+  end
+
   private
 
   def food_params
