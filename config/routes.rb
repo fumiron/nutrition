@@ -2,5 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "foods#index"
   resources :users, only: :show
-  resources :foods
+  resources :foods do
+    member do
+      get 'search'
+    end
+  end
 end
