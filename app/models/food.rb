@@ -1,6 +1,6 @@
 class Food < ApplicationRecord
   belongs_to :user
-
+  has_many :favorites, dependent: :destroy
   validates :name, presence: true 
 
   def self.search(search)
@@ -10,4 +10,9 @@ class Food < ApplicationRecord
       Food.all
     end
   end
+
+  def favorite_by?(user)
+    favorites.where(user_id: user).exists?
+  end
+
 end

@@ -22,5 +22,5 @@ class User < ApplicationRecord
   end
 
   has_many :foods
-  
+  has_many :favorites
 end
