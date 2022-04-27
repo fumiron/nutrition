@@ -1,9 +1,9 @@
-<div class='search-bar-contents'>
+<%# <div class='search-bar-contents'>
       <%= form_with(url: search_food_path(@food.id), local: true, method: :get, class: "search-form") do |form| %>
-        <%= form.text_field :keyword, placeholder: "食品を検索する", class: "search-input" %>
-        <%= form.submit "検索", class: "search-btn" %>
-      <% end %>
-    </div>
+        <%# <%= form.text_field :keyword, placeholder: "食品を検索する", class: "search-input" %>
+        <%# <%= form.submit "検索", class: "search-btn" %>
+      <%# <% end %>
+    <%# </div>
 <div class="user__card">
   <%= render partial: 'food', collection: @foods %>
-</div>
+<%# </div>
