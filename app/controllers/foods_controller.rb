@@ -43,8 +43,6 @@ class FoodsController < ApplicationController
 
   def search
     @food = Food.find(params[:id])
-
-
   end
 
   
