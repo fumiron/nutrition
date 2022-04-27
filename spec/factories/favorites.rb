@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :favorite do
-    user { nil }
-    food { nil }
+    user_id       { Faker::Number.non_zero_digit }
+    food_id       { Faker::Number.non_zero_digit }
   end
 end
