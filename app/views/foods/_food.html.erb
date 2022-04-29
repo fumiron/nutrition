@@ -1,42 +1,41 @@
 <table class="table table-bordered">
   <thead>
-    <tr>
-      <th scope="fo">食品名</th>
-      <th scope="fo">カロリー</th>
-      <th scope="fo">タンパク質</th>
-      <th scope="fo">脂質</th>
-      <th scope="fo">炭水化物</th>
-      <th scope="fo">ビタミンA</th>
-      <th scope="fo">ビタミンB1</th>
-      <th scope="fo">ビタミンB2</th>
-      <th scope="fo">ビタミンC</th>
-      <th scope="fo">ビタミンD</th>
-      <th scope="fo">ナトリウム</th>
-      <th scope="fo">カルシウム</th>
-      <th scope="fo">マグネシウム</th>
-      <th scope="fo">鉄</th>
-      <th scope="fo">亜鉛</th>
-      <th scope="fo">食塩相当量</th>
+      <tr><th class="top">食品名</th></tr>
+      <tr><th class="top">カロリー</th></tr>
+      <tr><th class="top">タンパク質</th></tr>
+      <tr><th class="top">脂質</th></tr>
+      <tr><th class="top">炭水化物</th></tr>
+      <tr><th class="top">ビタミンA</th></tr>
+      <tr><th class="top">ビタミンB1</th></tr>
+      <tr><th class="top">ビタミンB2</th></tr>
+      <tr><th class="top">ビタミンC</th></tr>
+      <tr><th class="top">ビタミンD</th></tr>
+      <tr><th class="top">ナトリウム</th></tr>
+      <tr><th class="top">カルシウム</th></tr>
+      <tr><th class="top">マグネシウム</th></tr>
+      <tr><th class="top">鉄</th></tr>
+      <tr><th class="top">亜鉛</th></tr>
+      <tr><th class="top">食塩相当量</th></tr>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="nut"><%= link_to food.name, food_path(food.id) %></th>
-      <td><%= food.calorie %></td>
-      <td><%= food.protein %></td>
-      <td><%= food.fat %></td>
-      <td><%= food.carbohydrate %></td>
-      <td><%= food.vitamin_a %></td>
-      <td><%= food.vitamin_b1 %></td>
-      <td><%= food.vitamin_b2 %></td>
-      <td><%= food.vitamin_c %></td>
-      <td><%= food.vitamin_d %></td>
-      <td><%= food.sodium %></td>
-      <td><%= food.calcium %></td>
-      <td><%= food.magnesium %></td>
-      <td><%= food.iron %></td>
-      <td><%= food.zinc %></td>
-      <td><%= food.salt %></td>
+      <tr><td class="bottom"><%= link_to food.name, food_path(food.id) %></td></tr>
+      <tr><td class="bottom"><%= food.calorie %></td></tr>
+      <tr><td class="bottom"><%= food.protein %></td></tr>
+      <tr><td class="bottom"><%= food.fat %></td></tr>
+      <tr><td class="bottom"><%= food.carbohydrate %></td></tr>
+      <tr><td class="bottom"><%= food.vitamin_a %></td></tr>
+      <tr><td class="bottom"><%= food.vitamin_b1 %></td></tr>
+      <tr><td class="bottom"><%= food.vitamin_b2 %></td></tr>
+      <tr><td class="bottom"><%= food.vitamin_c %></td></tr>
+      <tr><td class="bottom"><%= food.vitamin_d %></td></tr>
+      <tr><td class="bottom"><%= food.sodium %></td></tr>
+      <tr><td class="bottom"><%= food.calcium %></td></tr>
+      <tr><td class="bottom"><%= food.magnesium %></td></tr>
+      <tr><td class="bottom"><%= food.iron %></td></tr>
+      <tr><td class="bottom"><%= food.zinc %></td></tr>
+      <tr><td class="bottom"><%= food.salt %></td></tr>
     </tr>
   </tbody>
 </table>

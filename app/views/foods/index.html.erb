@@ -1,12 +1,17 @@
 <main class="main">
   <div class="inner">
     <div class='title-contents'>
-       <h5 class='sub-title'>
+       <h2 class='sub-title'>
         let's
-      </h5>    
+      </h2>    
       <h1 class='service-title'>
         POWER UP
       </h1>    
+    </div>
+    <div class='app-explanation'>
+    <p>POWER UPは食品の栄養素を管理できるアプリです</p><br>
+    <p>好きな食品を登録していつでもチェックできるようにしましょう</p><br>
+    <%= link_to "食品登録", new_food_path, class: :btn__solid%>
     </div>
     <div class='search-bar-contents'>
       <%= form_with(url: '/', local: true, method: :get, class: "search-form") do |form| %>

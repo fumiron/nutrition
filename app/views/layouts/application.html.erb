@@ -19,14 +19,15 @@
           </div>
             <% if user_signed_in? %>
               <div class="nav__right"> 
-                 <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
-                 <%= link_to current_user.nickname, "/users/#{current_user.id}", class: :nav__btn %>
-                 <%= link_to "食品登録", new_food_path, class: :nav__btn%>
-              </div> 
+               
+                  <%= link_to "ログアウト", destroy_user_session_path, method: :delete ,class: :nav__logout %>
+                  <%= link_to "マイページ", "/users/#{current_user.id}", class: :btn__solid%>
+                  <%= link_to "食品登録", new_food_path, class: :btn__solid %>
+              </div>
             <% else %>
               <div class="nav__right">
-                <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
-                <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
+                <%= link_to "ログイン", new_user_session_path, class: :btn__solid %>
+                <%= link_to "新規登録", new_user_registration_path, class: :btn__solid %>
               </div>
             <% end %>
         </div>
@@ -34,7 +35,7 @@
     </header>
     <%= yield %>
     <footer class="footer">
-      <p class="copyright">Copyright © PROTO SPACE All rights reserved.</p>
+      <p class="copyright"> © POWER UP</p>
     </footer>
   </body>
 </html>

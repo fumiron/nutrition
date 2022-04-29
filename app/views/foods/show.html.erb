@@ -3,12 +3,12 @@
     <div class="user__wrapper">
       <h2><span class="show-heading">
         <%= @food.name + "の栄養素詳細"%></span>
-        <%= link_to "編集", edit_food_path(@food.id), class: :nav__btn %>
-        <%= link_to "削除", food_path(@food.id), method: :delete, class: :nav__btn %>
+        <%= link_to "編集", edit_food_path(@food.id), class: :btn__solid %>
+        <%= link_to "削除", food_path(@food.id), method: :delete, class: :btn__solid %>
         <% if @food.favorite_by?(current_user) %>
-          <td><%= link_to "お気に入りを外す", food_favorites_path(@food), method: :delete %></td>
+          <td><%= link_to "♥", food_favorites_path(@food), method: :delete, class: :like__star%></td>
         <% else %>
-          <td><%= link_to "お気に入り", food_favorites_path(@food), method: :post %></td>
+          <td><%= link_to "♡", food_favorites_path(@food), method: :post, class: :no__star%></td>
         <% end %>
         </h2>
        <table class="table table-bordered">
