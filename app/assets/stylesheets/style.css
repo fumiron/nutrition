@@ -123,8 +123,30 @@ td {
   background: rgba(248, 252, 252, 0.516);
   border-top: solid 5px #4ca3f5;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-  
 }
+
+.form__wrapper__r {
+  height: 33vh;
+  width: 25vw;
+  margin-left: 275px;
+  padding-bottom:4px ;
+  color: #5d627b;
+  background: rgba(248, 252, 252, 0.516);
+  border-top: solid 5px #4ca3f5;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.form__wrapper__s {
+  height: 28vh;
+  width: 25vw;
+  margin-left: 275px;
+  padding-bottom:4px ;
+  color: #5d627b;
+  background: rgba(248, 252, 252, 0.516);
+  border-top: solid 5px #4ca3f5;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
 
 .form__text {
   width: 50%;
