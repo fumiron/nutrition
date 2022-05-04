@@ -5,7 +5,7 @@ class Food < ApplicationRecord
 
   def self.search(search)
     if search != ""
-      Food.where('text LIKE(?)', "%#{search}%")
+      Food.where('name LIKE(?)', "%#{search}%")
     else
       Food.all
     end

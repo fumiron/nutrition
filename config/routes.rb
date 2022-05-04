@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "foods#index"
   resources :users, only: :show
   resources :foods do
-    member do
+    collection do
       get 'search'
     end
   end
