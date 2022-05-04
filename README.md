@@ -10,7 +10,14 @@ POWER UP
 
 # URL
 
+http://35.77.255.121/
+
 # テスト用アカウント
+
+Basic認証ID: fumiron
+Basic認証Pass: 1250
+ユーザー名 kobayashi
+パスワード aaa111
 
 # 利用方法
 
@@ -26,6 +33,8 @@ POWER UP
 https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99hoE/edit?usp=sharing
 
 # 実装した機能についての画像やGIFおよびその説明
+
+
 
 # 実装予定の機能
 
