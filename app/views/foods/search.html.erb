@@ -1,9 +1,29 @@
-<%# <div class='search-bar-contents'>
-      <%= form_with(url: search_food_path(@food.id), local: true, method: :get, class: "search-form") do |form| %>
-        <%# <%= form.text_field :keyword, placeholder: "食品を検索する", class: "search-input" %>
-        <%# <%= form.submit "検索", class: "search-btn" %>
-      <%# <% end %>
-    <%# </div>
+<div class='search-bar-contents'>
+  <%= form_with(url: search_foods_path, local: true, method: :get, class: "search-form") do |form| %>
+    <%= form.text_field :keyword, placeholder: "食品を検索する", class: "search-input" %>
+      <%= form.submit "検索", class: "search-btn" %>
+    <% end %>
+</div>
 <div class="user__card">
-  <%= render partial: 'food', collection: @foods %>
-<%# </div>
+  <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th class="top">食品名</th>
+            <th class="top">カロリー<br>(g)</th>
+            <th class="top">タンパク質<br>(g)</th>
+            <th class="top">脂質<br>(g)</th>
+            <th class="top">炭水化物<br>(g)</th>
+            <th class="top">ビタミンA<br>(mg)</th>
+            <th class="top">ビタミンB1<br>(mg)</th>
+            <th class="top">ビタミンB2<br>(mg)</th>
+            <th class="top">ビタミンC<br>(mg)</th>
+            <th class="top">ナトリウム<br>(mg)</th>
+            <th class="top">カルシウム<br>(mg)</th>
+            <th class="top">鉄<br>(mg)</th>
+            <th class="top">亜鉛<br>(mg)</th>
+            <td class="top">食塩相当量<br>(g)</td>
+          </tr>
+        </thead>
+         <%= render partial: 'food', collection: @food %>
+  </table>
+</div>

@@ -1,41 +1,20 @@
-<table class="table table-bordered">
-  <thead>
-      <tr><th class="top">食品名</th></tr>
-      <tr><th class="top">カロリー</th></tr>
-      <tr><th class="top">タンパク質</th></tr>
-      <tr><th class="top">脂質</th></tr>
-      <tr><th class="top">炭水化物</th></tr>
-      <tr><th class="top">ビタミンA</th></tr>
-      <tr><th class="top">ビタミンB1</th></tr>
-      <tr><th class="top">ビタミンB2</th></tr>
-      <tr><th class="top">ビタミンC</th></tr>
-      <tr><th class="top">ビタミンD</th></tr>
-      <tr><th class="top">ナトリウム</th></tr>
-      <tr><th class="top">カルシウム</th></tr>
-      <tr><th class="top">マグネシウム</th></tr>
-      <tr><th class="top">鉄</th></tr>
-      <tr><th class="top">亜鉛</th></tr>
-      <tr><th class="top">食塩相当量</th></tr>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <tr><td class="bottom"><%= link_to food.name, food_path(food.id) %></td></tr>
-      <tr><td class="bottom"><%= food.calorie %></td></tr>
-      <tr><td class="bottom"><%= food.protein %></td></tr>
-      <tr><td class="bottom"><%= food.fat %></td></tr>
-      <tr><td class="bottom"><%= food.carbohydrate %></td></tr>
-      <tr><td class="bottom"><%= food.vitamin_a %></td></tr>
-      <tr><td class="bottom"><%= food.vitamin_b1 %></td></tr>
-      <tr><td class="bottom"><%= food.vitamin_b2 %></td></tr>
-      <tr><td class="bottom"><%= food.vitamin_c %></td></tr>
-      <tr><td class="bottom"><%= food.vitamin_d %></td></tr>
-      <tr><td class="bottom"><%= food.sodium %></td></tr>
-      <tr><td class="bottom"><%= food.calcium %></td></tr>
-      <tr><td class="bottom"><%= food.magnesium %></td></tr>
-      <tr><td class="bottom"><%= food.iron %></td></tr>
-      <tr><td class="bottom"><%= food.zinc %></td></tr>
-      <tr><td class="bottom"><%= food.salt %></td></tr>
-    </tr>
-  </tbody>
-</table>
+<% if user_signed_in? && current_user.id == food.user_id %>
+<tbody>
+  <tr>
+    <th class="bottom"><%= link_to food.name, food_path(food.id), class: :food__name %></th>
+    <th class="bottom"><%= food.calorie %></th>
+    <th class="bottom"><%= food.protein %></th>
+    <th class="bottom"><%= food.fat %></th>
+    <th class="bottom"><%= food.carbohydrate %></th>
+    <th class="bottom"><%= food.vitamin_a %></th>
+    <th class="bottom"><%= food.vitamin_b1 %></th>
+    <th class="bottom"><%= food.vitamin_b2 %></th>
+    <th class="bottom"><%= food.vitamin_c %></th>
+    <th class="bottom"><%= food.sodium %></th>
+    <th class="bottom"><%= food.calcium %></th>
+    <th class="bottom"><%= food.iron %></th>
+    <th class="bottom"><%= food.zinc %></th>
+    <td class="bottom"><%= food.salt %></td>
+  </tr>
+</tbody>
+<% end %>
