@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     get :favorites, on: :collection
   end
   resources :foods do
-    member do
+    collection do
       get 'search'
     end
     resource :favorites, only: [:create, :destroy]

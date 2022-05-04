@@ -42,7 +42,7 @@ class FoodsController < ApplicationController
   end
 
   def search
-    @food = Food.find(params[:id])
+    @food = Food.search(params[:keyword])
   end
 
   
