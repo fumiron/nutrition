@@ -1,6 +1,6 @@
 <div class="main">
   <div class="inner">
-    <div class="form__wrapper">
+    <div class="form__wrapper__r">
       <h2 class="page-heading">ユーザー新規登録</h2>
 
         <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
@@ -23,7 +23,7 @@
         </div>
 
         <div class="actions">
-          <%= f.submit "新規登録", class: :form__btn  %>
+          <%= f.submit "新規登録", class: :btn__solid %>
         </div>
       <% end %>
     </div>
