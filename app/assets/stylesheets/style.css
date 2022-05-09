@@ -98,27 +98,25 @@ a {
 
 .top {
   border: 1px solid rgb(192, 189, 189);
-  padding: 8px 8px 8px 8px;
+  height: 4vh;
+  min-width: calc(3.8vw);
 }
 .bottom {
   border: 1px solid rgb(192, 189, 189);
-  padding: 8px 8px 8px 8px;
+  min-width: calc(3.8vw);
 }
 
-th {
-  white-space: nowrap;
-  font-size: small;
-}
-
-td {
-  font-size: small;
+.bottom_name {
+  border: 1px solid rgb(192, 189, 189);
+  min-width: calc(3.8vw);
 }
 
 .form__wrapper{
   min-height: calc(100vh - 161px);
-  width: 25vw;
-  margin-left: 275px;
-  padding-bottom:4px ;
+  max-width: calc(75vh - 161px);
+  margin: 0 auto;
+  padding: 1px;
+  margin-bottom: 10px;
   color: #5d627b;
   background: rgba(248, 252, 252, 0.516);
   border-top: solid 5px #4ca3f5;
@@ -126,9 +124,9 @@ td {
 }
 
 .form__wrapper__r {
-  height: 33vh;
-  width: 25vw;
-  margin-left: 275px;
+  min-height: calc(50vh - 161px);
+  max-width: calc(65vh - 161px);
+  margin: 0 auto;
   padding-bottom:4px ;
   color: #5d627b;
   background: rgba(248, 252, 252, 0.516);
@@ -137,9 +135,9 @@ td {
 }
 
 .form__wrapper__s {
-  height: 28vh;
-  width: 25vw;
-  margin-left: 275px;
+  min-height: calc(50vh - 161px);
+  max-width: calc(65vh - 161px);
+  margin: 0 auto;
   padding-bottom:4px ;
   color: #5d627b;
   background: rgba(248, 252, 252, 0.516);
@@ -202,7 +200,7 @@ td {
 }
 
 .main {
-  min-height: 86vh;
+  min-height: 81vh;
   position: relative;
   padding-top: 70px;
   box-sizing: border-box;
@@ -267,19 +265,11 @@ td {
 
 .search-input {
   width: 40%;
-  margin-left: 287px;
-}
-
-.search-bar-contents {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 3vh;
 }
 
 .search-form {
-  width: 65vw;
   height: 5vh;
-  display: flex;
   margin-bottom: 5px;
 }
 
@@ -289,12 +279,8 @@ td {
   padding-left: 10px;
 }
 
-.search-button {
+.search-btn {
   width: 5vh;
-  border: 0;
-  cursor: pointer;
-  background-color: #3ccace;
-  padding: 8px;
 }
 
 .search-icon {
@@ -343,12 +329,13 @@ td {
 .table-bordered {
   border-collapse: collapse;
   border: 0;
-  margin: 20px 20px;
+  min-height: calc(30vh - 101px);
   text-align: center;
   color: #5d627b;
   background: rgba(248, 252, 252, 0.516);
   border-top: solid 2px #00060b;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+  margin-bottom: 10px;
 }
 .left {
   font-size: large;
@@ -436,8 +423,8 @@ td {
 
 /* ユーザーページ */
 .user__wrapper{
-  min-height: calc(100vh - 161px);
-  text-align: center;
+  min-height: calc(50vh - 101px);
+  min-width: calc(120vh -10px);
 }
 
 .table__col1{
@@ -500,7 +487,68 @@ td {
  /* スマホ表示 */
 @media (max-width: 599px) {
   .logo {
-    width: 120px;
+    width: 250px;
+  }
+
+  .nav {
+    display: block;
+  }
+  .header {
+    min-height: 8vh;
+    padding: 10px 0 10px 0;
+    margin: 0;
+  }
+
+  .nav__right {
+    text-align: right;
+    padding: 0;
+  }
+  
+  .nav__logout {
+    font-size: 12px;
+  }
+  
+  .btn__solid {
+    font-size: 12px;
+    width: 80px;
+ 
+  }
+
+  .main {
+    padding-top: 45px;
+  }
+
+  .title-contents {
+    margin: 20px 0 20px 0;
+    height: 35vh;
+  }
+
+  .service-title {
+    font-size: 43px;
+    margin: 0 0 40px 13px ;
+  }
+  
+  .sub-title {
+    margin-left: 20px;
+  }
+
+  .app-explanation {
+    padding-top: 40px;
+  }
+
+  .search-input {
+    width: 40%;
+    height: 3vh;
+  }
+  .search-form {
+    height: 5vh;
+    margin-bottom: 0px;
+    padding-top: 5px;
+  }
+  .search-btn {
+    width: 5vh;
+    height: 3vh;
+    font-size: 2px;
   }
   .page-heading {
     font-size: 20px;
@@ -521,4 +569,20 @@ td {
   .table{
     width: 100%;
   }
+
+  .top {
+    font-size: 10px;
+  }
+
+  .bottom {
+    font-size: 10px;
+  }
+
+  .bottom_name {
+    font-size: 10px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+
+
 }

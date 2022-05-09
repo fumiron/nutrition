@@ -19,7 +19,6 @@
           </div>
             <% if user_signed_in? %>
               <div class="nav__right"> 
-               
                   <%= link_to "ログアウト", destroy_user_session_path, method: :delete ,class: :nav__logout %>
                   <%= link_to "マイページ", "/users/#{current_user.id}", class: :btn__solid%>
                   <%= link_to "食品登録", new_food_path, class: :btn__solid %>

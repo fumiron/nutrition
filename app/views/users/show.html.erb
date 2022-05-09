@@ -9,7 +9,7 @@
         <thead>
           <tr>
             <th class="top">食品名</th>
-            <th class="top">カロリー<br>(kcal)</th>
+            <th class="top">カロリー(kcal)</th>
             <th class="top">タンパク質<br>(g)</th>
             <th class="top">脂質<br>(g)</th>
             <th class="top">炭水化物<br>(g)</th>
@@ -21,7 +21,7 @@
             <th class="top">カルシウム<br>(mg)</th>
             <th class="top">鉄<br>(mg)</th>
             <th class="top">亜鉛<br>(mg)</th>
-            <td class="top">食塩相当量<br>(g)</td>
+            <th class="top">食塩相当量<br>(g)</th>
           </tr>
         </thead>
        <%= render partial: 'favorite', collection: @favorites %>
@@ -35,7 +35,7 @@
         <thead>
           <tr>
             <th class="top">食品名</th>
-            <th class="top">カロリー<br>(g)</th>
+            <th class="top">カロリー<br>(kcal)</th>
             <th class="top">タンパク質<br>(g)</th>
             <th class="top">脂質<br>(g)</th>
             <th class="top">炭水化物<br>(g)</th>
@@ -47,7 +47,7 @@
             <th class="top">カルシウム<br>(mg)</th>
             <th class="top">鉄<br>(mg)</th>
             <th class="top">亜鉛<br>(mg)</th>
-            <td class="top">食塩相当量<br>(g)</td>
+            <th class="top">食塩相当量<br>(g)</th>
           </tr>
         </thead>
         <%= render partial: 'food', collection: @user.foods %>
