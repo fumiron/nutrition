@@ -15,8 +15,11 @@ http://35.77.255.121/
 # テスト用アカウント
 
 Basic認証ID: fumiron
+
 Basic認証Pass: 1250
+
 ユーザー名 kobayashi
+
 パスワード aaa111
 
 # アプリケーションを作成した背景
@@ -66,8 +69,11 @@ https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99
 ## 使用言語
 
 Ruby on Rails
+
  devise
+
  Rspec
+
  Rubocop
 
 HTML/CSS
@@ -79,7 +85,9 @@ EC2
 ## 開発環境
 
 Vsual Studio code
+
 GitHub
+
 AWS
 
 # 工夫したポイント
