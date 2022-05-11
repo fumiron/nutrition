@@ -35,25 +35,21 @@ class FoodsController < ApplicationController
   end
 
   def destroy
-    if @food.destroy
-      redirect_to "/users/#{current_user.id}"
-    end
+    redirect_to "/users/#{current_user.id}" if @food.destroy
   end
 
   def search
     @food = Food.search(params[:keyword])
   end
 
-  
-
   private
 
   def food_params
-    params.require(:food).permit(:name, :calorie, :protein, :fat, :saturated_fat, :n_6_fat, :n_3_fat, :cholesterol, :carbohydrate, :dietary_fiber, :vitamin_a, :vitamin_d, :vitamin_e, :vitamin_k, :vitamin_b1, :vitamin_b2, :vitamin_b6, :vitamin_b12, :vitamin_c, :niacin, :folate, :pantothenic, :biotin, :sodium, :potassium, :calcium, :magnesium, :phosphorus, :iron, :zinc, :copper, :manganese, :iodine, :selenium, :chromium, :molybdenum, :salt).merge(user_id: current_user.id)
+    params.require(:food).permit(:name, :calorie, :protein, :fat, :saturated_fat, :n_6_fat, :n_3_fat, :cholesterol,
+                                 :carbohydrate, :dietary_fiber, :vitamin_a, :vitamin_d, :vitamin_e, :vitamin_k, :vitamin_b1, :vitamin_b2, :vitamin_b6, :vitamin_b12, :vitamin_c, :niacin, :folate, :pantothenic, :biotin, :sodium, :potassium, :calcium, :magnesium, :phosphorus, :iron, :zinc, :copper, :manganese, :iodine, :selenium, :chromium, :molybdenum, :salt).merge(user_id: current_user.id)
   end
 
   def set_tweet
     @food = Food.find(params[:id])
   end
-
 end

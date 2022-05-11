@@ -9,12 +9,12 @@ RSpec.describe Favorite, type: :model do
       it 'user_idが空では登録できない' do
         @favorite.user_id = ''
         @favorite.valid?
-        expect(@favorite.errors.full_messages).to include("User must exist")
+        expect(@favorite.errors.full_messages).to include('User must exist')
       end
       it 'Food_idが空では登録できない' do
         @favorite.food_id = ''
         @favorite.valid?
-        expect(@favorite.errors.full_messages).to include("Food must exist")
+        expect(@favorite.errors.full_messages).to include('Food must exist')
       end
     end
   end

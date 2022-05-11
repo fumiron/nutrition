@@ -13,10 +13,10 @@ class FavoritesController < ApplicationController
     @food = Food.find(params[:food_id])
     favorite = @food.favorites.find_by(user_id: current_user.id)
     if favorite.present?
-        favorite.destroy
-        redirect_to request.referer
+      favorite.destroy
+      redirect_to request.referer
     else
-        redirect_to request.referer
+      redirect_to request.referer
     end
   end
 end
