@@ -19,8 +19,6 @@ Basic認証Pass: 1250
 ユーザー名 kobayashi
 パスワード aaa111
 
-# 利用方法
-
 # アプリケーションを作成した背景
 作成に至った背景としては2点ございます。
 
@@ -32,27 +30,65 @@ Basic認証Pass: 1250
 
 https://docs.google.com/spreadsheets/d/1n1AjwbpVRf1pNwxoFi0kVHvEaN-qxlC0Ymffyv99hoE/edit?usp=sharing
 
-# 実装した機能についての画像やGIFおよびその説明
+# 利用方法
 
+新規登録を行う
 
+[![Image from Gyazo](https://i.gyazo.com/f56827a9b04e90a9fbbdff463a382d2f.jpg)](https://gyazo.com/f56827a9b04e90a9fbbdff463a382d2f)
+
+トップページの食品登録ボタンから、食品名・栄養素を入力し登録する
+
+[![Image from Gyazo](https://i.gyazo.com/0668e7a1db7212d368cf861677d4084e.jpg)](https://gyazo.com/0668e7a1db7212d368cf861677d4084e)
+
+マイページにて登録食品・お気に入り食品の確認(表示は主要栄養素のみ)
+
+[![Image from Gyazo](https://i.gyazo.com/c0e456482ea4147b653471e0a9d78fcd.jpg)](https://gyazo.com/c0e456482ea4147b653471e0a9d78fcd)
+
+詳細ページでは登録食品のすべての栄養素を表示
+
+[![Image from Gyazo](https://i.gyazo.com/4c923ec818da51dd0f0c029317851efa.gif)](https://gyazo.com/4c923ec818da51dd0f0c029317851efa)
+
+トップページの食品検索ボタンから登録した食品の検索ができる
+
+[![Image from Gyazo](https://i.gyazo.com/c40f28f0ed8c4e1b907820503d4ff613.gif)](https://gyazo.com/c40f28f0ed8c4e1b907820503d4ff613)
 
 # 実装予定の機能
 
-# データベース設計
+お気に入り登録ボタンを非同期通信へ実装する
 
-[![Image from Gyazo](https://i.gyazo.com/30504c3dae7c790266efd578e0b2f6e4.png)](https://gyazo.com/30504c3dae7c790266efd578e0b2f6e4)
+あらかじめ主要な食品を登録し、検索フォームから検索できるようにする
 
-# 画面遷移図
+新規登録時に年齢を入力し、一般的にどの程度の栄養をとったほうが良いかマイページへ表示する
 
-[![Image from Gyazo](https://i.gyazo.com/471f07274a1490eb25987d16b129efd5.png)](https://gyazo.com/471f07274a1490eb25987d16b129efd5)
 
 # 開発環境
 
-# ローカルでの動作方法
+## 使用言語
+
+Ruby on Rails
+ devise
+ Rspec
+ Rubocop
+
+HTML/CSS
+
+## デプロイ方法
+
+EC2
+
+## 開発環境
+
+Vsual Studio code
+GitHub
+AWS
 
 # 工夫したポイント
 
+未完成ではありますが、「理解するのに時間がかかる」「説明書を読まないと使えない」のような状態にならないよう、シンプルな機能・デザインを心がけましました。
+
 # DB 設計
+
+[![Image from Gyazo](https://i.gyazo.com/30504c3dae7c790266efd578e0b2f6e4.png)](https://gyazo.com/30504c3dae7c790266efd578e0b2f6e4)
 
 ## users table
 
